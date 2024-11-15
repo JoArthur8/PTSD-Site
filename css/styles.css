@@ -11223,3 +11223,12 @@ body{
 .text-158093{
   color: #158093;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Coluna mínima de 15rem */
+  gap: 16px; /* Espaçamento entre os cards */
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 7%;
+}
