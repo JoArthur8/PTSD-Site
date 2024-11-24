@@ -11271,3 +11271,19 @@ body{
 .img-ptsd{
   width: 30%;
 }
+.sobreimg{
+  width: 50%;
+  border-radius: 25rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.sobreimg2{
+  width: 33%;
+  border-radius: 25rem;
+  justify-self: center;
+  align-self: center;
+}
+section{
+  padding-top: 2.5rem;
+}
