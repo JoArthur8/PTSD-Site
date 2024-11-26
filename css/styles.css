@@ -4277,6 +4277,7 @@ textarea.form-control-lg {
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
   color: var(--bs-card-color);
+  background-color: #bebebf;
 }
 
 .card-title {
@@ -11284,11 +11285,22 @@ body{
 .img-ptsd{
   width: 30%;
 }
-.sobreimg{
-  width: 50%;
-  border-radius: 25rem;
-  justify-self: center;
-  align-self: center;
+/* Define o tamanho e o formato das imagens */
+.sobreimg {
+  width: 150px; /* Largura fixa */
+  height: 150px; /* Altura fixa */
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+  border-radius: 50%; /* Torna as imagens circulares */
+  border: 2px solid white; /* Opcional: Adiciona borda */
+  display: block; /* Garante centralização com margin */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Alinha os textos abaixo das imagens */
+.col p {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
 }
 
 .sobreimg2{
@@ -11308,6 +11320,97 @@ section{
   min-height: 35rem;
   padding: 15rem 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/tratamentos-do-transtorno-de-estresse-pos-traumatico.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.grid-item {
+  border: 1px solid #1cabc4; /* Borda de cada célula */
+  padding: 10px;
+  margin-right: 15px;
+}
+
+.centro {
+  margin-right: 20px;
+}
+
+/* Estilo para o container das tabelas */
+.custom-table {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  gap: 20px; /* Espaço entre as tabelas */
+  margin-top: 20px; /* Espaçamento superior opcional */
+  margin-bottom: 20px;
+}
+
+/* Estilo individual para cada tabela */
+.table-card {
+  border: 1px solid #1cabc4; /* Borda azul clara */
+  border-radius: 8px; /* Bordas arredondadas */
+  width: 500px; /* Largura fixa */
+  padding: 10px; /* Espaçamento interno */
+  background-color: #000; /* Fundo preto */
+  color: #fff; /* Texto branco */
+  font-family: Arial, sans-serif;
+  text-align: center; /* Centraliza texto */
+}
+
+/* Estilo para o cabeçalho da tabela */
+.table-header {
+  font-weight: bold;
+  font-size: 16px;
+  border-bottom: 1px solid #1cabc4; /* Linha divisória */
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para o corpo da tabela */
+.table-body {
+  font-size: 14px;
+  line-height: 1.5; /* Espaçamento entre linhas */
+  text-align: justify; /* Justifica o texto */
+  margin-bottom: 10px; /* Espaço abaixo do texto */
+}
+
+/* Estilo para o rodapé da tabela */
+.table-footer {
+  font-size: 12px;
+  color: #ccc; /* Texto em tom mais claro */
+  border-top: 1px solid #1cabc4; /* Linha superior separando o rodapé */
+  padding-top: 5px;
+  margin-top: 10px;
+  text-align: left; /* Alinhamento opcional para diferenciar do resto */
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  .custom-table {
+    flex-direction: column; /* Muda para empilhar as tabelas */
+    align-items: center; /* Centraliza as tabelas no eixo vertical */
+    gap: 10px; /* Espaço menor entre as tabelas no modo empilhado */
+  }
+
+  .table-card {
+    width: 90%; /* Faz as tabelas ocuparem 90% da largura da tela */
+    max-width: 400px; /* Ainda mantém um limite de largura */
+  }
+}
+
+.titulo-legal {
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.thor {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/thor-ptsd.jfif");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
